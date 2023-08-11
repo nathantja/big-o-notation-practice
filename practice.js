@@ -144,3 +144,35 @@ O(1) - constant time
 11. What’s the time complexity of the Object.keys() function?
 O(n) - linear time
 
+
+
+//FURTHER STUDY
+
+function pairSum(nums) {
+
+  const sortedNums = nums.sort((a, b) => {
+    return a - b;
+  });
+
+  return sortedNums[sortedNums.length - 1] + sortedNums[sortedNums.length - 2];
+
+}
+
+// console.log(pairSum([10, 1, 4, 2, 1]))
+
+// let highest;
+// let sum;
+// for (let i = 0; i < nums.length; i++) {
+
+//   if ( nums[i] > highest) {
+//     highest = nums[i];
+//   }
+
+//   for (let j; j < nums.length; j++) {
+//     if (highest * nums[j] > sum) {
+//       sum =highest * nums[j];
+//     };
+//   }
+
+// }
+// return sum;
